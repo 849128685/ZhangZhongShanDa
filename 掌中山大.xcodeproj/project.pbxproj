@@ -48,21 +48,21 @@
 		8B21266718C0A0D300C67D2F /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
 		8B21266C18C0A29A00C67D2F /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		8B21266D18C0A29A00C67D2F /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		8B7C5E0818BF6B3B0004A3BB /* ZhangZhongShanDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhangZhongShanDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7C5E0818BF6B3B0004A3BB /* 掌中山大.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "掌中山大.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7C5E0B18BF6B3B0004A3BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B7C5E0D18BF6B3B0004A3BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8B7C5E0F18BF6B3B0004A3BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8B7C5E1318BF6B3B0004A3BB /* ZhangZhongShanDa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZhangZhongShanDa-Info.plist"; sourceTree = "<group>"; };
+		8B7C5E1318BF6B3B0004A3BB /* 掌中山大-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "掌中山大-Info.plist"; sourceTree = "<group>"; };
 		8B7C5E1518BF6B3B0004A3BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B7C5E1718BF6B3B0004A3BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8B7C5E1918BF6B3B0004A3BB /* ZhangZhongShanDa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhangZhongShanDa-Prefix.pch"; sourceTree = "<group>"; };
+		8B7C5E1918BF6B3B0004A3BB /* 掌中山大-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "掌中山大-Prefix.pch"; sourceTree = "<group>"; };
 		8B7C5E1A18BF6B3B0004A3BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B7C5E1B18BF6B3B0004A3BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B7C5E1E18BF6B3B0004A3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B7C5E2318BF6B3B0004A3BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8B7C5E2918BF6B3B0004A3BB /* ZhangZhongShanDaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhangZhongShanDaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7C5E2918BF6B3B0004A3BB /* 掌中山大Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "掌中山大Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7C5E2A18BF6B3B0004A3BB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8B7C5E3218BF6B3B0004A3BB /* ZhangZhongShanDaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZhangZhongShanDaTests-Info.plist"; sourceTree = "<group>"; };
+		8B7C5E3218BF6B3B0004A3BB /* 掌中山大Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "掌中山大Tests-Info.plist"; sourceTree = "<group>"; };
 		8B7C5E3418BF6B3B0004A3BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B7C5E3618BF6B3B0004A3BB /* ZhangZhongShanDaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhangZhongShanDaTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,12 +91,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B21263318C09D4300C67D2F /* SUNCommonComponent */ = {
+		8B21263318C09D4300C67D2F /* 左右滑动 */ = {
 			isa = PBXGroup;
 			children = (
 				8B21265C18C09EB500C67D2F /* SUNSlideSwitchView.h */,
 				8B21265D18C09EB500C67D2F /* SUNSlideSwitchView.m */,
 			);
+			name = "左右滑动";
 			path = SUNCommonComponent;
 			sourceTree = "<group>";
 		};
@@ -123,8 +124,8 @@
 		8B7C5E0918BF6B3B0004A3BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B7C5E0818BF6B3B0004A3BB /* ZhangZhongShanDa.app */,
-				8B7C5E2918BF6B3B0004A3BB /* ZhangZhongShanDaTests.xctest */,
+				8B7C5E0818BF6B3B0004A3BB /* 掌中山大.app */,
+				8B7C5E2918BF6B3B0004A3BB /* 掌中山大Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,15 +144,15 @@
 		8B7C5E1118BF6B3B0004A3BB /* ZhangZhongShanDa */ = {
 			isa = PBXGroup;
 			children = (
+				8B21263318C09D4300C67D2F /* 左右滑动 */,
+				8B21265F18C09FEA00C67D2F /* Source */,
 				8B21266618C0A0D300C67D2F /* HomepageViewController.h */,
 				8B21266718C0A0D300C67D2F /* HomepageViewController.m */,
 				8B21266C18C0A29A00C67D2F /* ListViewController.h */,
 				8B21266D18C0A29A00C67D2F /* ListViewController.m */,
 				8B7C5E1D18BF6B3B0004A3BB /* Main.storyboard */,
-				8B21265F18C09FEA00C67D2F /* Source */,
-				8B21263318C09D4300C67D2F /* SUNCommonComponent */,
-				8B7C5E1A18BF6B3B0004A3BB /* AppDelegate.h */,
 				8B7C5E1B18BF6B3B0004A3BB /* AppDelegate.m */,
+				8B7C5E1A18BF6B3B0004A3BB /* AppDelegate.h */,
 				8B7C5E2318BF6B3B0004A3BB /* Images.xcassets */,
 				8B7C5E1218BF6B3B0004A3BB /* Supporting Files */,
 			);
@@ -161,10 +162,10 @@
 		8B7C5E1218BF6B3B0004A3BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8B7C5E1318BF6B3B0004A3BB /* ZhangZhongShanDa-Info.plist */,
+				8B7C5E1318BF6B3B0004A3BB /* 掌中山大-Info.plist */,
 				8B7C5E1418BF6B3B0004A3BB /* InfoPlist.strings */,
 				8B7C5E1718BF6B3B0004A3BB /* main.m */,
-				8B7C5E1918BF6B3B0004A3BB /* ZhangZhongShanDa-Prefix.pch */,
+				8B7C5E1918BF6B3B0004A3BB /* 掌中山大-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +182,7 @@
 		8B7C5E3118BF6B3B0004A3BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8B7C5E3218BF6B3B0004A3BB /* ZhangZhongShanDaTests-Info.plist */,
+				8B7C5E3218BF6B3B0004A3BB /* 掌中山大Tests-Info.plist */,
 				8B7C5E3318BF6B3B0004A3BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -190,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B7C5E0718BF6B3B0004A3BB /* ZhangZhongShanDa */ = {
+		8B7C5E0718BF6B3B0004A3BB /* 掌中山大 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B7C5E3A18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "ZhangZhongShanDa" */;
+			buildConfigurationList = 8B7C5E3A18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "掌中山大" */;
 			buildPhases = (
 				8B7C5E0418BF6B3B0004A3BB /* Sources */,
 				8B7C5E0518BF6B3B0004A3BB /* Frameworks */,
@@ -202,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = ZhangZhongShanDa;
+			name = "掌中山大";
 			productName = ZhangZhongShanDa;
-			productReference = 8B7C5E0818BF6B3B0004A3BB /* ZhangZhongShanDa.app */;
+			productReference = 8B7C5E0818BF6B3B0004A3BB /* 掌中山大.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B7C5E2818BF6B3B0004A3BB /* ZhangZhongShanDaTests */ = {
+		8B7C5E2818BF6B3B0004A3BB /* 掌中山大Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B7C5E3D18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "ZhangZhongShanDaTests" */;
+			buildConfigurationList = 8B7C5E3D18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "掌中山大Tests" */;
 			buildPhases = (
 				8B7C5E2518BF6B3B0004A3BB /* Sources */,
 				8B7C5E2618BF6B3B0004A3BB /* Frameworks */,
@@ -220,9 +221,9 @@
 			dependencies = (
 				8B7C5E2F18BF6B3B0004A3BB /* PBXTargetDependency */,
 			);
-			name = ZhangZhongShanDaTests;
+			name = "掌中山大Tests";
 			productName = ZhangZhongShanDaTests;
-			productReference = 8B7C5E2918BF6B3B0004A3BB /* ZhangZhongShanDaTests.xctest */;
+			productReference = 8B7C5E2918BF6B3B0004A3BB /* 掌中山大Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -234,12 +235,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "iOS开发";
 				TargetAttributes = {
+					8B7C5E0718BF6B3B0004A3BB = {
+						DevelopmentTeam = B7PT44R388;
+					};
 					8B7C5E2818BF6B3B0004A3BB = {
 						TestTargetID = 8B7C5E0718BF6B3B0004A3BB;
 					};
 				};
 			};
-			buildConfigurationList = 8B7C5E0318BF6B3B0004A3BB /* Build configuration list for PBXProject "ZhangZhongShanDa" */;
+			buildConfigurationList = 8B7C5E0318BF6B3B0004A3BB /* Build configuration list for PBXProject "掌中山大" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B7C5E0718BF6B3B0004A3BB /* ZhangZhongShanDa */,
-				8B7C5E2818BF6B3B0004A3BB /* ZhangZhongShanDaTests */,
+				8B7C5E0718BF6B3B0004A3BB /* 掌中山大 */,
+				8B7C5E2818BF6B3B0004A3BB /* 掌中山大Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +312,7 @@
 /* Begin PBXTargetDependency section */
 		8B7C5E2F18BF6B3B0004A3BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B7C5E0718BF6B3B0004A3BB /* ZhangZhongShanDa */;
+			target = 8B7C5E0718BF6B3B0004A3BB /* 掌中山大 */;
 			targetProxy = 8B7C5E2E18BF6B3B0004A3BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -358,7 +362,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Production IOS Push Services: com.SDUOnline.zzsd";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -397,7 +401,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Production IOS Push Services: com.SDUOnline.zzsd";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -418,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZhangZhongShanDa/ZhangZhongShanDa-Prefix.pch";
-				INFOPLIST_FILE = "ZhangZhongShanDa/ZhangZhongShanDa-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ZhangZhongShanDa/掌中山大-Prefix.pch";
+				INFOPLIST_FILE = "ZhangZhongShanDa/掌中山大-Info.plist";
+				PRODUCT_NAME = "掌中山大";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,10 +438,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZhangZhongShanDa/ZhangZhongShanDa-Prefix.pch";
-				INFOPLIST_FILE = "ZhangZhongShanDa/ZhangZhongShanDa-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ZhangZhongShanDa/掌中山大-Prefix.pch";
+				INFOPLIST_FILE = "ZhangZhongShanDa/掌中山大-Info.plist";
+				PRODUCT_NAME = "掌中山大";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -455,8 +465,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ZhangZhongShanDaTests/ZhangZhongShanDaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ZhangZhongShanDaTests/掌中山大Tests-Info.plist";
+				PRODUCT_NAME = "掌中山大Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -474,8 +484,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZhangZhongShanDa/ZhangZhongShanDa-Prefix.pch";
-				INFOPLIST_FILE = "ZhangZhongShanDaTests/ZhangZhongShanDaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ZhangZhongShanDaTests/掌中山大Tests-Info.plist";
+				PRODUCT_NAME = "掌中山大Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -484,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B7C5E0318BF6B3B0004A3BB /* Build configuration list for PBXProject "ZhangZhongShanDa" */ = {
+		8B7C5E0318BF6B3B0004A3BB /* Build configuration list for PBXProject "掌中山大" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B7C5E3818BF6B3B0004A3BB /* Debug */,
@@ -493,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B7C5E3A18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "ZhangZhongShanDa" */ = {
+		8B7C5E3A18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "掌中山大" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B7C5E3B18BF6B3B0004A3BB /* Debug */,
@@ -502,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B7C5E3D18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "ZhangZhongShanDaTests" */ = {
+		8B7C5E3D18BF6B3B0004A3BB /* Build configuration list for PBXNativeTarget "掌中山大Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B7C5E3E18BF6B3B0004A3BB /* Debug */,

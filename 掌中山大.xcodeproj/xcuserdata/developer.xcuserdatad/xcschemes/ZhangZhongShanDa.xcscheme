@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B7C5E0718BF6B3B0004A3BB"
-               BuildableName = "ZhangZhongShanDa.app"
-               BlueprintName = "ZhangZhongShanDa"
-               ReferencedContainer = "container:ZhangZhongShanDa.xcodeproj">
+               BuildableName = "&#25484;&#20013;&#23665;&#22823;.app"
+               BlueprintName = "&#25484;&#20013;&#23665;&#22823;"
+               ReferencedContainer = "container:&#25484;&#20013;&#23665;&#22823;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B7C5E2818BF6B3B0004A3BB"
-               BuildableName = "ZhangZhongShanDaTests.xctest"
-               BlueprintName = "ZhangZhongShanDaTests"
-               ReferencedContainer = "container:ZhangZhongShanDa.xcodeproj">
+               BuildableName = "&#25484;&#20013;&#23665;&#22823;Tests.xctest"
+               BlueprintName = "&#25484;&#20013;&#23665;&#22823;Tests"
+               ReferencedContainer = "container:&#25484;&#20013;&#23665;&#22823;.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B7C5E0718BF6B3B0004A3BB"
-            BuildableName = "ZhangZhongShanDa.app"
-            BlueprintName = "ZhangZhongShanDa"
-            ReferencedContainer = "container:ZhangZhongShanDa.xcodeproj">
+            BuildableName = "&#25484;&#20013;&#23665;&#22823;.app"
+            BlueprintName = "&#25484;&#20013;&#23665;&#22823;"
+            ReferencedContainer = "container:&#25484;&#20013;&#23665;&#22823;.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B7C5E0718BF6B3B0004A3BB"
-            BuildableName = "ZhangZhongShanDa.app"
-            BlueprintName = "ZhangZhongShanDa"
-            ReferencedContainer = "container:ZhangZhongShanDa.xcodeproj">
+            BuildableName = "&#25484;&#20013;&#23665;&#22823;.app"
+            BlueprintName = "&#25484;&#20013;&#23665;&#22823;"
+            ReferencedContainer = "container:&#25484;&#20013;&#23665;&#22823;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B7C5E0718BF6B3B0004A3BB"
-            BuildableName = "ZhangZhongShanDa.app"
-            BlueprintName = "ZhangZhongShanDa"
-            ReferencedContainer = "container:ZhangZhongShanDa.xcodeproj">
+            BuildableName = "&#25484;&#20013;&#23665;&#22823;.app"
+            BlueprintName = "&#25484;&#20013;&#23665;&#22823;"
+            ReferencedContainer = "container:&#25484;&#20013;&#23665;&#22823;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

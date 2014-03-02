@@ -20,6 +20,9 @@
     ListViewController *_vc4;
     ListViewController *_vc5;
     ListViewController *_vc6;
+    ListViewController *_vc7;
+    ListViewController *_vc8;
+
 }
 
 @property (nonatomic, strong) IBOutlet SUNSlideSwitchView *slideSwitchView;
@@ -30,6 +33,9 @@
 @property (nonatomic, strong) ListViewController *vc4;
 @property (nonatomic, strong) ListViewController *vc5;
 @property (nonatomic, strong) ListViewController *vc6;
+@property (nonatomic, strong) ListViewController *vc7;
+@property (nonatomic, strong) ListViewController *vc8;
 
+- (IBAction)URLRequest:(id)sender;
 
 @end
