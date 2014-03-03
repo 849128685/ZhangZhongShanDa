@@ -12,6 +12,7 @@
 @interface ListViewController ()
 @property NSMutableData *data;
 @property NSMutableData *receiveData;
+@property NSMutableArray *listData;
 @end
 
 @implementation ListViewController
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
     self.tableViewList = [[UITableView alloc] initWithFrame:self.view.frame];
     self.tableViewList.delegate = self;
@@ -36,8 +38,8 @@
     
     [self.view addSubview:self.tableViewList];
     
-    
-    _data = [[NSMutableData alloc] init];
+    self.listData = [[NSMutableArray alloc] init];
+    //_data = [[NSMutableData alloc] init];
     
     //创建URL
     NSURL *url = [NSURL URLWithString:@"http://202.194.15.193:8080/News2/servlet/NewestListServlet"];
@@ -68,7 +70,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 30;
+    return [self.listData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,10 +84,21 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ListViewCellId];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ 第 %d 行",self.title,row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ 第 %d 行",self.listData[row],row];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@ ",[objItem objectForKey:@"title"]];
     
     return cell;
 }
+
+   //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+   //- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+   //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+
+
+
+
+
 
 //接收到服务器回应的时候调用此方法
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
@@ -95,11 +108,16 @@
     self.receiveData = [NSMutableData data];
     
 }
+
+
+
 //接收到服务器传输数据的时候调用，此方法根据数据大小执行若干次
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.receiveData appendData:data];
 }
+
+
 //数据传完之后调用此方法
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
@@ -108,13 +126,31 @@
     
     NSString *receiveStr = [[NSString alloc]initWithData:newData encoding:NSUTF8StringEncoding];
     
+    NSArray *obj = [NSJSONSerialization JSONObjectWithData:newData options:NSJSONReadingMutableContainers error:nil];
+    //将newdate转码，用了自带的NSJSONSerialization
+    NSDictionary *objItem = [obj objectAtIndex:0];
+    NSLog(@"objItemobjItem%@",[objItem objectForKey:@"title"]);
+    
+    
+    [self.listData addObjectsFromArray:obj];
+    
+    [_tableViewList reloadData];
+    
+    NSLog(@"%@", obj);
+    
     NSLog(@"%@",receiveStr);
 }
+
+
 //网络请求过程中，出现任何错误（断网，连接超时等）会进入此方法
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"%@",[error localizedDescription]);
+    
+    
 }
+
+
 
 - (void)viewDidCurrentView
 {

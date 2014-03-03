@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Dc2-4x-XYn" customClass="SUNSlideSwitchView">
-                                <rect key="frame" x="0.0" y="48" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="112" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="slideSwitchViewDelegate" destination="vXZ-lx-hvc" id="CQV-Bi-h1n"/>
+                                    <outlet property="slideSwitchViewDelegate" destination="vXZ-lx-hvc" id="KGM-a4-m0B"/>
                                 </connections>
                             </view>
                         </subviews>
