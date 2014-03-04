@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SUNSlideSwitchView.h"
-#import "ListViewController.h"
+
+@class ListViewController;
 
 @interface HomepageViewController : UIViewController
 
@@ -24,6 +25,7 @@
     ListViewController *_vc8;
 
 }
+//@property (nonatomic,assign) NSInteger items;//定义显示个数
 
 @property (nonatomic, strong) IBOutlet SUNSlideSwitchView *slideSwitchView;
 

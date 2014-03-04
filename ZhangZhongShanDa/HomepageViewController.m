@@ -8,7 +8,7 @@
 
 #import "HomepageViewController.h"
 #import "ListViewController.h"
-//#import "NSURLRequestViewController.h"
+
 
 @interface HomepageViewController ()
 
@@ -21,13 +21,16 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
@@ -66,12 +69,12 @@
     self.vc8 = [[ListViewController alloc] init];
     self.vc8.title = @"就业公告";
     
-    /*UIButton *rightSideButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *rightSideButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightSideButton setImage:[UIImage imageNamed:@"icon_rightarrow.png"] forState:UIControlStateNormal];
     [rightSideButton setImage:[UIImage imageNamed:@"icon_rightarrow.png"]  forState:UIControlStateHighlighted];
     rightSideButton.frame = CGRectMake(0, 0, 20.0f, 44.0f);
     rightSideButton.userInteractionEnabled = NO;
-    self.slideSwitchView.rigthSideButton = rightSideButton;*/
+    self.slideSwitchView.rigthSideButton = rightSideButton;
     //向右划的button，以及其图片，但没实际用处
     
     [self.slideSwitchView buildUI];

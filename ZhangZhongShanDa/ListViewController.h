@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ListViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>//修改父类为uitbleviewcontrol
 
 {
     UITableView *_tableViewList;
 }
 
-@property (nonatomic, strong) IBOutlet UITableView *tableViewList;
+//@property (nonatomic, strong) IBOutlet UITableView *tableViewList;
 
 - (void)viewDidCurrentView;
 
