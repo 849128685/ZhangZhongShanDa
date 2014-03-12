@@ -7,16 +7,24 @@
 //  post请求，将参数放在body里面，post请求操作相对复杂，需要将参数和地址分开，不过安全性高，参数放在body里面，不易被捕获
 //  ios异步post请求,下拉刷新
 
+
 #import "ListViewController.h"
 
 
 @interface ListViewController ()
+
+- (void)setState:(PWLoadMoreState)aState;
+
+
 @property NSMutableData *data;
 @property NSMutableData *receiveData;
 @property NSMutableArray *listData;
 @end
 
 @implementation ListViewController
+
+@synthesize delegate=_delegate;//下拉加载更多，不太明白
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -67,11 +75,11 @@
     [self performSelector:@selector(loadData) withObject:nil afterDelay:2.0f];
 }
 
--(void)loadData{
+-(void)loadData
+{
     
     [self.refreshControl endRefreshing];
     self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
-    
     [self.tableView reloadData];
 }
 
@@ -163,7 +171,113 @@
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"%@",[error localizedDescription]);
+
 }
+
+
+//下拉加载更多
+- (void)setState:(PWLoadMoreState)aState{
+	
+	switch (aState) {
+		case PWLoadMoreNormal:
+            [self addTarget:self action:@selector(callDelegateToLoadMore) forControlEvents:UIControlEventTouchUpInside];
+			_statusLabel.text = NSLocalizedString(@"Load More", @"Load More items");
+			[_activityView stopAnimating];
+			
+			break;
+		case PWLoadMoreLoading:
+            [self removeTarget:self action:@selector(callDelegateToLoadMore) forControlEvents:UIControlEventTouchUpInside];
+			_statusLabel.text = NSLocalizedString(@"Loading...", @"Loading items");
+			[_activityView startAnimating];
+			
+			break;
+		case PWLoadMoreDone:
+            [self removeTarget:self action:@selector(callDelegateToLoadMore) forControlEvents:UIControlEventTouchUpInside];
+			_statusLabel.text = NSLocalizedString(@"No More", @"There is no more item");
+			[_activityView stopAnimating];
+			
+			break;
+		default:
+			break;
+	}
+	
+	_state = aState;
+}
+
+- (void)pwLoadMoreTableDataSourceDidFinishedLoading {
+    if ([self delegateIsAllLoaded]) {
+        [self noMore];
+    } else {
+        [self canLoadMore];
+    }
+}
+
+- (BOOL)delegateIsAllLoaded {
+    BOOL _allLoaded = NO;
+    if ([_delegate respondsToSelector:@selector(pwLoadMoreTableDataSourceAllLoaded)]) {
+        _allLoaded = [_delegate pwLoadMoreTableDataSourceAllLoaded];
+    }
+    return _allLoaded;
+}
+
+- (void)resetLoadMore {
+    if ([self delegateIsAllLoaded]) {
+        [self noMore];
+    } else
+        [self canLoadMore];
+}
+
+- (void)canLoadMore {
+    [self setState:PWLoadMoreNormal];
+}
+
+- (void)noMore {
+    [self setState:PWLoadMoreDone];
+}
+
+- (void)realCallDelegateToLoadMore { //temporary
+    if ([_delegate respondsToSelector:@selector(pwLoadMore)]) {
+        [_delegate pwLoadMore];
+        [self setState:PWLoadMoreLoading];
+    }
+}
+
+-(void) updateStatus:(NSTimer *)timer{
+    if ([_delegate respondsToSelector:@selector(pwLoadMoreTableDataSourceIsLoading)]) {
+        if ([_delegate pwLoadMoreTableDataSourceIsLoading]) {
+            //Do nothing
+        } else {
+            [timer invalidate];
+            [self pwLoadMoreTableDataSourceDidFinishedLoading];
+        }
+    } else {
+        //Do nothing
+    }
+}
+
+- (void)callDelegateToLoadMore {
+    if (_state == PWLoadMoreNormal) {
+        if ([_delegate respondsToSelector:@selector(pwLoadMoreTableDataSourceIsLoading)]) {
+            if ([_delegate pwLoadMoreTableDataSourceIsLoading]) {
+                [self removeTarget:self action:@selector(callDelegateToLoadMore) forControlEvents:UIControlEventTouchUpInside];
+                _statusLabel.text = NSLocalizedString(@"Not available now...", @"Wait until it's safe to load more");
+                [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(updateStatus:) userInfo:nil repeats:YES];
+            } else {
+                [self realCallDelegateToLoadMore];
+            }
+        } else
+            [self realCallDelegateToLoadMore];//temporary
+    } else {
+        //Do nothing
+    }
+}
+#pragma mark -
+#pragma mark Dealloc
+- (void)dealloc {
+	
+	_delegate=nil;
+}
+
 
 
 - (void)viewDidCurrentView
